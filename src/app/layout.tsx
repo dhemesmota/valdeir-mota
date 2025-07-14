@@ -21,6 +21,11 @@ export const metadata: Metadata = {
   authors: [{ name: "Valdeir Mota" }],
   robots: "index, follow",
   manifest: "/manifest.json",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -54,6 +59,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head />
       <body className={`${geist.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>

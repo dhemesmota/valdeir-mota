@@ -1,21 +1,13 @@
 "use client";
 
-import { motion } from "framer-motion";
 import {
-  Award,
   Battery,
+  Car,
   CheckCircle,
-  Clock,
-  Zap as Lightning,
-  MapPin,
   MessageCircle,
-  Phone,
-  Settings,
-  Shield,
   Smartphone,
-  Star,
-  Truck,
   Wrench,
+  Zap,
 } from "lucide-react";
 
 export default function Home() {
@@ -29,206 +21,80 @@ export default function Home() {
     window.open(whatsappUrl, "_blank");
   };
 
-  const handlePhoneClick = () => {
-    window.open("tel:+553899188516", "_self");
-  };
-
-  const services = [
-    {
-      icon: Settings,
-      title: "Troca de Tela",
-      description: "Telas originais e de qualidade",
-      color: "from-blue-500 to-blue-600",
-    },
-    {
-      icon: Battery,
-      title: "Troca de Bateria",
-      description: "Baterias com garantia",
-      color: "from-green-500 to-green-600",
-    },
-    {
-      icon: Lightning,
-      title: "Conector de Carga",
-      description: "Reparo rápido e eficiente",
-      color: "from-yellow-500 to-orange-500",
-    },
-    {
-      icon: Wrench,
-      title: "Conserto Geral",
-      description: "Todos os modelos de celular",
-      color: "from-purple-500 to-purple-600",
-    },
-  ];
-
-  const features = [
-    { icon: Clock, text: "Atendimento Rápido" },
-    { icon: Shield, text: "Garantia de 90 Dias" },
-    { icon: Star, text: "Melhores Preços" },
-    { icon: CheckCircle, text: "Orçamento Grátis" },
-  ];
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-      {/* Header com gradiente */}
-      <div className="hero-gradient text-white py-8 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="mb-6"
-          >
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full mb-6 animate-float">
-              <Smartphone className="w-10 h-10 text-white" />
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-shadow-lg">
-              SEU CELULAR
-            </h1>
-            <h2 className="text-4xl md:text-6xl font-bold mb-4 text-shadow-lg">
-              QUEBROU?
-            </h2>
-            <p className="text-xl md:text-2xl font-light opacity-90">
-              Técnico especializado em manutenção de smartphones
-            </p>
-          </motion.div>
+    <div className="min-h-screen flex items-center justify-center bg-[#f4f5f8]">
+      <div className="w-[370px] bg-white rounded-2xl border-2 border-blue-500 shadow-xl p-6 flex flex-col items-center relative">
+        {/* Ícone topo */}
+        <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-white rounded-full p-2 shadow-md">
+          <Wrench
+            className="w-10 h-10 text-blue-300 drop-shadow"
+            style={{ filter: "drop-shadow(0 2px 8px #a5b4fc)" }}
+          />
         </div>
-      </div>
-
-      {/* Card principal */}
-      <div className="max-w-4xl mx-auto px-4 -mt-8 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="glass-effect rounded-3xl p-8 shadow-2xl drop-shadow-custom"
+        {/* Título */}
+        <div className="mt-8 mb-2 text-center">
+          <h1
+            className="text-2xl font-extrabold text-blue-600 leading-tight mb-1"
+            style={{ textShadow: "0 2px 8px #e0e7ff" }}
+          >
+            SEU CELULAR
+            <br />
+            QUEBROU?
+          </h1>
+          <p className="text-gray-500 text-sm font-medium">
+            Técnico especializado em manutenção
+          </p>
+        </div>
+        {/* Lista de serviços */}
+        <div className="w-full flex flex-col gap-3 my-4">
+          <div className="flex items-center gap-2 bg-gray-100 rounded-lg px-3 py-2 text-gray-700 text-base">
+            <Wrench className="w-5 h-5 text-blue-500" />
+            Troca de tela
+          </div>
+          <div className="flex items-center gap-2 bg-gray-100 rounded-lg px-3 py-2 text-gray-700 text-base">
+            <Battery className="w-5 h-5 text-green-500" />
+            Troca de bateria
+          </div>
+          <div className="flex items-center gap-2 bg-gray-100 rounded-lg px-3 py-2 text-gray-700 text-base">
+            <Zap className="w-5 h-5 text-orange-500" />
+            Troca de conector de carga
+          </div>
+          <div className="flex items-center gap-2 bg-gray-100 rounded-lg px-3 py-2 text-gray-700 text-base">
+            <Smartphone className="w-5 h-5 text-purple-400" />
+            Conserto geral de celulares
+          </div>
+        </div>
+        {/* Botão verde */}
+        <button
+          onClick={handleWhatsAppClick}
+          className="w-full flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg shadow transition mb-3 text-base"
         >
-          {/* Informações de contato destacadas */}
-          <div className="text-center mb-8">
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full mb-4 shadow-lg"
-            >
-              <Phone className="w-8 h-8 text-white" />
-            </motion.div>
-            <button
-              onClick={handlePhoneClick}
-              className="text-3xl md:text-4xl font-bold gradient-text mb-2 hover:scale-105 transition-transform"
-            >
-              (38) 9918-8516
-            </button>
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">
-              VALDEIR MOTA
-            </h3>
-            <p className="text-gray-600 font-medium">
-              Especialista em Conserto de Celulares
-            </p>
-          </div>
-
-          {/* Serviços */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            {services.map((service, index) => (
-              <motion.div
-                key={service.title}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.3 + index * 0.1 }}
-                className="service-card group"
-              >
-                <div
-                  className={`icon-container bg-gradient-to-br ${service.color} mr-4 group-hover:scale-110 transition-transform`}
-                >
-                  <service.icon className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-1">
-                    {service.title}
-                  </h4>
-                  <p className="text-sm text-gray-600">{service.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Destaque especial */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.6 }}
-            className="tech-gradient p-6 rounded-2xl mb-8 text-center text-white shadow-xl"
+          <Car className="w-5 h-5 mr-1" />
+          BUSCO E ENTREGO EM CASA!
+        </button>
+        {/* Telefone e nome */}
+        <div className="w-full text-center border border-blue-300 rounded-xl py-3 mb-2 mt-1">
+          <a
+            href="tel:+553899188516"
+            className="block text-blue-600 text-xl font-bold hover:underline"
           >
-            <div className="flex items-center justify-center mb-3">
-              <Truck className="w-8 h-8 mr-3" />
-              <h3 className="text-2xl font-bold">BUSCO E ENTREGO EM CASA!</h3>
-            </div>
-            <p className="text-lg opacity-90">Comodidade total para você</p>
-          </motion.div>
-
-          {/* Features */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            {features.map((feature, index) => (
-              <motion.div
-                key={feature.text}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.7 + index * 0.1 }}
-                className="text-center"
-              >
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-2">
-                  <feature.icon className="w-6 h-6 text-blue-600" />
-                </div>
-                <p className="text-sm font-medium text-gray-700">
-                  {feature.text}
-                </p>
-              </motion.div>
-            ))}
+            (38) 9918-8516
+          </a>
+          <div className="text-gray-800 text-lg font-bold tracking-wide mt-1">
+            VALDEIR MOTA
           </div>
-
-          {/* Botão WhatsApp */}
-          <motion.button
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.8 }}
-            onClick={handleWhatsAppClick}
-            className="btn-success w-full text-lg py-4 flex items-center justify-center space-x-3"
-          >
-            <MessageCircle className="w-6 h-6" />
-            <span>Falar no WhatsApp</span>
-          </motion.button>
-
-          {/* Footer */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.9 }}
-            className="text-center mt-8 pt-6 border-t border-gray-200"
-          >
-            <div className="flex items-center justify-center space-x-6 text-sm text-gray-600">
-              <div className="flex items-center">
-                <Award className="w-4 h-4 mr-1" />
-                <span>Profissional Certificado</span>
-              </div>
-              <div className="flex items-center">
-                <MapPin className="w-4 h-4 mr-1" />
-                <span>Atendimento Local</span>
-              </div>
-            </div>
-          </motion.div>
-        </motion.div>
-      </div>
-
-      {/* Background decorativo */}
-      <div className="fixed inset-0 -z-10">
-        <div className="absolute top-0 left-0 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse-slow"></div>
-        <div
-          className="absolute top-0 right-0 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse-slow"
-          style={{ animationDelay: "1s" }}
-        ></div>
-        <div
-          className="absolute bottom-0 left-0 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse-slow"
-          style={{ animationDelay: "2s" }}
-        ></div>
+        </div>
+        {/* Rodapé */}
+        <div className="w-full flex flex-col items-center gap-1 mt-2">
+          <div className="flex items-center text-xs text-gray-500">
+            <MessageCircle className="w-4 h-4 mr-1 text-gray-400" />
+            Orçamento sem compromisso
+          </div>
+          <div className="flex items-center text-xs text-green-600 font-semibold">
+            <CheckCircle className="w-4 h-4 mr-1 text-green-500" />
+            Os melhores preços da cidade!
+          </div>
+        </div>
       </div>
     </div>
   );
