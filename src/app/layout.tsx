@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -19,10 +19,8 @@ export const metadata: Metadata = {
   keywords:
     "conserto celular, manutenção celular, troca tela, troca bateria, técnico celular, Valdeir Mota",
   authors: [{ name: "Valdeir Mota" }],
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   manifest: "/manifest.json",
-  themeColor: "#007bff",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -41,6 +39,12 @@ export const metadata: Metadata = {
     description:
       "Técnico especializado em manutenção de celulares. Busco e entrego em casa!",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#007bff",
 };
 
 export default function RootLayout({
