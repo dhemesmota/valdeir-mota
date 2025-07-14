@@ -124,7 +124,7 @@ export default function Home() {
               (38) 9918-8516
             </button>
             <div className="text-xl font-bold text-gray-800 mb-3 tracking-wide">
-              VALDEIR MODA
+              VALDEIR MOTA
             </div>
           </motion.div>
 

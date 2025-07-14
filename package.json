@@ -25,7 +25,7 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   },
-  "description": "Site de cartão de visita digital para Valdeir Moda - Técnico especializado em conserto de celulares",
+  "description": "Site de cartão de visita digital para Valdeir Mota - Técnico especializado em conserto de celulares",
   "keywords": [
     "nextjs",
     "react",
@@ -35,6 +35,6 @@
     "conserto",
     "manutenção"
   ],
-  "author": "Valdeir Moda",
+  "author": "Valdeir Mota",
   "license": "MIT"
 }

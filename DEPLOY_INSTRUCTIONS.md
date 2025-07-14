@@ -7,8 +7,8 @@
 1. Acesse [github.com](https://github.com)
 2. Clique em "New repository"
 3. Configure o repositório:
-   - **Nome**: `valdeir-moda`
-   - **Descrição**: "Cartão de visita digital do Valdeir Moda - Técnico especializado em conserto de celulares"
+   - **Nome**: `valdeir-mota`
+   - **Descrição**: "Cartão de visita digital do Valdeir Mota - Técnico especializado em conserto de celulares"
    - **Visibilidade**: Public (recomendado) ou Private
    - **NÃO** inicialize com README (já temos um)
 4. Clique em "Create repository"
@@ -19,7 +19,7 @@ Execute os seguintes comandos no terminal:
 
 ```bash
 # Adicione o repositório remoto (substitua SEU_USUARIO pelo seu username do GitHub)
-git remote add origin https://github.com/SEU_USUARIO/valdeir-moda.git
+git remote add origin https://github.com/SEU_USUARIO/valdeir-mota.git
 
 # Envie o código para o GitHub
 git branch -M main
@@ -31,7 +31,7 @@ git push -u origin main
 1. Acesse [vercel.com](https://vercel.com)
 2. Faça login com sua conta GitHub
 3. Clique em "New Project"
-4. Importe o repositório `valdeir-moda`
+4. Importe o repositório `valdeir-mota`
 5. Configure o projeto:
    - **Framework Preset**: Next.js (deve ser detectado automaticamente)
    - **Root Directory**: `./` (padrão)
@@ -103,7 +103,7 @@ Se precisar de ajuda com o deploy ou personalização, entre em contato!
 
 ---
 
-**Valdeir Moda**  
+**Valdeir Mota**  
 📞 (38) 9918-8516  
 🔧 Técnico especializado em conserto de celulares  
 🚗 Busco e entrego em casa

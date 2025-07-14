@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Valdeir Moda - Conserto de Celulares",
+  title: "Valdeir Mota - Conserto de Celulares",
   description:
     "Técnico especializado em manutenção de celulares. Troca de tela, bateria, conector de carga e conserto geral. Busco e entrego em casa!",
   keywords:
-    "conserto celular, manutenção celular, troca tela, troca bateria, técnico celular, Valdeir Moda",
-  authors: [{ name: "Valdeir Moda" }],
+    "conserto celular, manutenção celular, troca tela, troca bateria, técnico celular, Valdeir Mota",
+  authors: [{ name: "Valdeir Mota" }],
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   manifest: "/manifest.json",
@@ -26,10 +26,10 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Valdeir Moda",
+    title: "Valdeir Mota",
   },
   openGraph: {
-    title: "Valdeir Moda - Conserto de Celulares",
+    title: "Valdeir Mota - Conserto de Celulares",
     description:
       "Técnico especializado em manutenção de celulares. Busco e entrego em casa!",
     type: "website",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Valdeir Moda - Conserto de Celulares",
+    title: "Valdeir Mota - Conserto de Celulares",
     description:
       "Técnico especializado em manutenção de celulares. Busco e entrego em casa!",
   },

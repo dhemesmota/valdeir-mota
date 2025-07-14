@@ -1,6 +1,6 @@
-# Valdeir Moda - Cartão de Visita Digital
+# Valdeir Mota - Cartão de Visita Digital
 
-Site de cartão de visita digital para Valdeir Moda, técnico especializado em conserto de celulares.
+Site de cartão de visita digital para Valdeir Mota, técnico especializado em conserto de celulares.
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -94,7 +94,7 @@ MIT License - veja o arquivo LICENSE para detalhes.
 
 ## 👨‍💻 Contato
 
-**Valdeir Moda**
+**Valdeir Mota**
 
 - 📞 (38) 9918-8516
 - 🔧 Técnico especializado em conserto de celulares
