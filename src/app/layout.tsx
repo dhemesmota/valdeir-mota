@@ -21,6 +21,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Valdeir Moda" }],
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
+  manifest: "/manifest.json",
+  themeColor: "#007bff",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Valdeir Moda",
+  },
   openGraph: {
     title: "Valdeir Moda - Conserto de Celulares",
     description:

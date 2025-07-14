@@ -1,0 +1,27 @@
+{
+  "name": "Valdeir Moda - Conserto de Celulares",
+  "short_name": "Valdeir Moda",
+  "description": "Técnico especializado em conserto de celulares. Troca de tela, bateria, conector de carga e conserto geral. Busco e entrego em casa!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0f2f5",
+  "theme_color": "#007bff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "utilities"],
+  "lang": "pt-BR",
+  "dir": "ltr"
+}
